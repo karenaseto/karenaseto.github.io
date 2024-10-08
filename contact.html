@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Link to external CSS for styling -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,18 +18,29 @@
                 <li><a href="index.html#skills">Skills</a></li>
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#portfolio">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li> <!-- Updated link to contact.html -->
+                <li><a href="contact.html">Contact</a></li> <!-- Keep Contact link -->
             </ul>
         </nav>
     </header>
 
-    <section id="about">
+    <section id="contact">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm Karena Seto, a Data Science student with experience in web technologies, UI/UX design, and more.</p>
-            <p>I have <strong>8+ years</strong> of experience working on a variety of projects. I love creating visually appealing, user-friendly websites.</p>
-            <p>In my career, I have worked with <strong>5+ companies</strong> and completed <strong>20+ projects</strong> successfully. My passion for web development continues to grow as I explore new trends and technologies in the industry.</p>
-            <a href="#" class="btn">Download CV</a>
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xeoqjnor" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 
