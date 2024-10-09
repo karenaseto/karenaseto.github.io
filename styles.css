@@ -11,25 +11,17 @@ header {
     background: #fff;
     padding: 20px;
     display: flex;
-    justify-content: center; /* Center the navigation links */
+    justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
-/* Logo styling: keep Karena on the left */
 header .logo {
     position: absolute;
     left: 20px;
     font-size: 24px;
     font-weight: bold;
-}
-
-/* Navigation styling */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav .nav-links {
@@ -95,13 +87,13 @@ section p {
 /* Add space between Download CV and Skills section */
 #about {
     padding: 40px 20px;
-    margin-bottom: 60px; /* Add space between About and Skills */
+    margin-bottom: 60px;
 }
 
 /* Skills Section */
 #skills {
     padding: 40px 20px;
-    background-color: #f5f5f5; /* Same background color */
+    background-color: #f5f5f5;
 }
 
 .skills-container {
@@ -142,7 +134,6 @@ section p {
     margin: 5px 0;
 }
 
-/* Progress bar styles (optional) */
 .skill-bar .progress {
     background-color: #ddd;
     border-radius: 20px;
@@ -166,25 +157,25 @@ section p {
 
 /* Align the "Download CV" button with the paragraphs and add styling */
 section .btn {
-    display: inline-flex; /* Align text and icon horizontally */
+    display: inline-flex;
     align-items: center;
-    background-color: #6c63ff; /* Purple background */
-    color: white; /* White text */
+    background-color: #6c63ff;
+    color: white;
     padding: 10px 20px;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    margin-left: 20px; /* Align with paragraphs */
+    margin-left: 20px;
     transition: background-color 0.3s ease;
 }
 
 section .btn:hover {
-    background-color: #4e4ccf; /* Hover color */
+    background-color: #4e4ccf;
 }
 
 section .btn i {
-    margin-left: 10px; /* Space between text and icon */
+    margin-left: 10px;
     font-size: 16px;
 }
 
@@ -213,40 +204,104 @@ section .btn i {
     padding: 10px;
 }
 
-/* Contact Form Styling */
-form {
+/* Contact Section */
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background-color: #f5f5f5;
+}
+
+/* Center Contact Me title */
+.contact-info h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center; /* Centering within entire page */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Align 'Get in touch via my social platforms' with social media logos */
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 50px; /* Align with social media links */
+}
+
+.contact-info ul li {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #6c63ff;
+}
+
+.contact-info ul li a {
+    text-decoration: none;
+    color: #6c63ff;
+    font-size: 1.1rem;
+}
+
+.contact-info ul li a:hover {
+    color: #4e4ccf;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 55%;
+}
+
+/* Remove the white box and borders */
+.contact-form form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
+    background-color: transparent; /* Remove white background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: none; /* Remove box shadow */
 }
 
-label {
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-input, textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+.contact-form input, 
+.contact-form textarea {
+    background-color: #f0e6ff; /* Light purple */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-button[type="submit"] {
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none; /* Remove outline */
+}
+
+.contact-form button {
     background-color: #6c63ff;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+.contact-form button:hover {
     background-color: #4e4ccf;
+}
+
+.contact-form button i {
+    margin-left: 10px;
 }
 
 /* Footer styles */
@@ -261,19 +316,6 @@ footer {
     width: 100%;
 }
 
-/* Footer links styling */
-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 15px;
-}
-
-footer a:hover {
-    color: #d1cfff;
-}
-
-/* Footer copyright styling */
 footer p {
     margin: 0;
     font-size: 16px;
