@@ -79,10 +79,31 @@ nav .nav-links li a:hover {
 
 /* Align section headings like "About Me" with the logo */
 section h2 {
-    text-align: left; /* Keep it left aligned */
-    margin-left: 20px; /* Same margin as the logo */
+    text-align: center; /* Center the title horizontally */
+    margin-left: 20px; /* Align the section headings with the logo */
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+/* Add padding to the paragraphs so the text isn't too close to the edge */
+section p {
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.6; /* Makes the text more readable */
+}
+
+/* Align the "Download CV" link with the paragraphs */
+section .btn {
+    display: inline-block; /* Make it behave like a block element */
+    margin-left: 20px; /* Align with the paragraph's margin */
+    color: #6c63ff; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section .btn:hover {
+    color: #4e4ccf; /* Hover color for the "Download CV" link */
 }
 
 /* Social Media Sidebar Styles */
@@ -146,9 +167,48 @@ button[type="submit"]:hover {
     background-color: #4e4ccf;
 }
 
-/* Footer styles */
+/* Footer styles for the desired design */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
+    background-color: #6c63ff; /* Purple background color */
+    color: white; /* White text */
+    text-align: center; /* Center all the content */
+    padding: 40px 20px; /* Increase padding for space */
+    border-radius: 30px 30px 0 0; /* Rounded top corners */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer links styling (if needed) */
+footer a {
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    margin: 0 15px; /* Space between footer links */
+}
+
+footer a:hover {
+    color: #d1cfff; /* Light hover effect */
+}
+
+/* Footer copyright styling */
+footer p {
+    margin: 0;
+    font-size: 16px; /* Adjust font size */
+}
+
+/* Optional: Footer social icons */
+.footer-icons {
+    margin-top: 20px; /* Space above social icons */
+}
+
+.footer-icons a {
+    color: white; /* Icon color */
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #d1cfff; /* Light purple hover for icons */
 }
