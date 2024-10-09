@@ -92,18 +92,28 @@ section p {
     line-height: 1.6; /* Makes the text more readable */
 }
 
-/* Align the "Download CV" link with the paragraphs */
+/* Align the "Download CV" button with the paragraphs and add styling */
 section .btn {
-    display: inline-block; /* Make it behave like a block element */
-    margin-left: 20px; /* Align with the paragraph's margin */
-    color: #6c63ff; /* Link color */
+    display: inline-flex; /* Align text and icon horizontally */
+    align-items: center;
+    background-color: #6c63ff; /* Purple background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 10px; /* Rounded corners */
     text-decoration: none;
+    font-size: 16px;
     font-weight: bold;
-    font-size: 18px;
+    margin-left: 20px; /* Align with paragraphs */
+    transition: background-color 0.3s ease;
 }
 
 section .btn:hover {
-    color: #4e4ccf; /* Hover color for the "Download CV" link */
+    background-color: #4e4ccf; /* Hover color */
+}
+
+section .btn i {
+    margin-left: 10px; /* Space between text and icon */
+    font-size: 16px;
 }
 
 /* Social Media Sidebar Styles */
