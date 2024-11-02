@@ -265,7 +265,7 @@ section .btn i {
 }
 
 /* Portfolio Section */
-#portfolio {
+.portfolio {
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: center;
@@ -286,17 +286,18 @@ section .btn i {
 .portfolio-content {
     display: flex;
     align-items: flex-start;
+    gap: 20px; /* Space between image and text */
 }
 
 .portfolio-image {
-    width: 40%;
-    margin-right: 20px;
+    flex: 0 0 50%; /* Set a fixed width for the image */
+    max-width: 500px; /* Maximum size for the image */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-description {
-    width: 60%;
+    flex: 1; /* Allow the description to take up remaining space */
 }
 
 .portfolio-description p {
