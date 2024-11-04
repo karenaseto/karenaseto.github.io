@@ -159,6 +159,10 @@ section p {
 .progress-bar.indesign { width: 75%; }
 .progress-bar.photoshop { width: 70%; }
 
+/* Specific widths for language skills */
+.progress-bar.english { width: 100%; }
+.progress-bar.cantonese { width: 85%; }
+
 .progress-container .percentage {
     margin-top: 5px;
     font-size: 0.9rem;
