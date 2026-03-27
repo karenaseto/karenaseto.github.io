@@ -3,139 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About | Karena Seto</title>
+
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
 
-    <header>
-        <nav>
-            <div class="logo">Karena</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="about-page">
+<div class="page-wrapper">
+
+<header>
+    <nav>
+        <div class="logo"></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="portfolio-hero-simple">
+    <div class="section-inner">
+        <div class="portfolio-accent-bar"></div>
+        <h1 class="portfolio-hero-title">ABOUT</h1>
+    </div>
+</section>
+
+<section class="about-editorial">
+    <div class="about-content">
+        <p>
+            Hi! I'm Karena, a data science and business administration student at Chapman University who enjoys combining analytical thinking with creativity. I'm especially interested in building websites and apps that can positively impact everyday life. Outside of coding and school, I'm also a Yelp Elite food reviewer, so I love exploring new places, writing reviews, and taking food pictures!
+        </p>
+    </div>
+
+    <div class="about-side">
+        <img src="DSC01455.JPG" alt="Karena Seto" class="about-photo">
+    </div>
+</section>
+
+<section class="beyond-code">
+    <div class="beyond-code-inner">
+        <div class="beyond-code-copy">
+            <h2>Beyond the Code...</h2>
+            <p>
+                Outside of tech, I'm a Yelp Elite aka a food reviewer who loves exploring new restaurants/cafes, writing reviews, and taking pictures of food! It's one of the ways I express creativity outside of coding, and it has helped me grow my eye for detail, storytelling, and user experience in everyday life.
+            </p>
+
+            <div class="beyond-code-actions">
+                <a href="https://www.yelp.com/user_details?userid=vgZiwSEAjEZrI4IB6-j37A" target="_blank" rel="noopener noreferrer" class="beyond-btn beyond-btn-solid">
+                    My Yelp
+                </a>
+                <a href="recommendations.html" class="beyond-btn beyond-btn-outline">
+                    My Recommendations
+                </a>
+            </div>
+        </div>
+
+        <div class="food-stack-section">
+            <div class="food-stack" id="foodStack">
+                <div class="food-card"><img src="IMG_8629.jpg" alt="Food photo 1"></div>
+                <div class="food-card"><img src="IMG_8844.jpg" alt="Food photo 2"></div>
+                <div class="food-card"><img src="IMG_8849.jpg" alt="Food photo 3"></div>
+                <div class="food-card"><img src="IMG_8889.jpg" alt="Food photo 4"></div>
+                <div class="food-card"><img src="IMG_8929.jpg" alt="Food photo 5"></div>
+                <div class="food-card"><img src="IMG_9078.jpg" alt="Food photo 6"></div>
+                <div class="food-card"><img src="IMG_9164.jpg" alt="Food photo 7"></div>
+                <div class="food-card"><img src="IMG_9307.jpg" alt="Food photo 8"></div>
+                <div class="food-card"><img src="IMG_9324.jpg" alt="Food photo 9"></div>
+                <div class="food-card"><img src="IMG_9385.jpg" alt="Food photo 10"></div>
+            </div>
+
+            <div class="food-stack-controls">
+                <button class="stack-btn" id="prevFood" aria-label="Previous food photo">&#8592;</button>
+                <button class="stack-btn" id="nextFood" aria-label="Next food photo">&#8594;</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="more-about">
+    <div class="more-about-inner">
+        <div class="software-card">
+            <h3>Software</h3>
+            <div class="software-icons">
+                <div class="tool"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                <div class="tool"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+                <div class="tool"><i class="fa-solid fa-chart-line"></i><span>Analytics</span></div>
+                <div class="tool"><i class="fa-solid fa-file-excel"></i><span>Excel</span></div>
+                <div class="tool"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+                <div class="tool"><i class="fa-solid fa-pen-nib"></i><span>Design</span></div>
+            </div>
+        </div>
+
+        <div class="info-card languages-card">
+            <h3>Speaking Languages</h3>
+            <ul class="info-list">
+                <li>English</li>
+                <li>Cantonese</li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Karena Seto! I currently attend Chapman University in Orange, California! I'm pursuing a B.S. in Data Science and minoring in Business Admin.</p>
-        <p>I'm passionate about using my knowledge in Python, C++, Java, and HTML to contribute to projects with a team.</p>
-        
-        <a href="KarenasResume.pdf" class="btn" download>
-            Download CV <i class="fas fa-download"></i>
-        </a>
-    </section>
-
-    <section id="skills">
-        <div class="skills-container">
-            <div class="skill">
-                <h3>Programming Languages</h3>
-                <div class="skill-bar">
-                    <div class="progress-container">
-                        <p>C++</p>
-                        <div class="progress">
-                            <div class="progress-bar cplusplus"></div>
-                        </div>
-                        <span class="percentage">65%</span>
-                    </div>
-                    <div class="progress-container">
-                        <p>Python</p>
-                        <div class="progress">
-                            <div class="progress-bar python"></div>
-                        </div>
-                        <span class="percentage">65%</span>
-                    </div>
-                    <div class="progress-container">
-                        <p>Java</p>
-                        <div class="progress">
-                            <div class="progress-bar java"></div>
-                        </div>
-                        <span class="percentage">60%</span>
-                    </div>
-                    <div class="progress-container">
-                        <p>HTML</p>
-                        <div class="progress">
-                            <div class="progress-bar html"></div>
-                        </div>
-                        <span class="percentage">30%</span>
-                    </div>
-                    <div class="progress-container">
-                        <p>CSS</p>
-                        <div class="progress">
-                            <div class="progress-bar css"></div>
-                        </div>
-                        <span class="percentage">20%</span>
-                    </div>
-                    <div class="progress-container">
-                        <p>SQL</p>
-                        <div class="progress">
-                            <div class="progress-bar sql"></div>
-                        </div>
-                        <span class="percentage">15%</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="skill">
-                <h3>Programs</h3>
-                <div class="skill-bar">
-                    <div class="progress-container">
-                        <p>Microsoft Excel</p>
-                        <div class="progress">
-                            <div class="progress-bar excel"></div>
-                        </div>
-                        <span class="percentage">80%</span>
-                    </div>
-                    <div class="progress-container">
-                        <p>Adobe InDesign</p>
-                        <div class="progress">
-                            <div class="progress-bar indesign"></div>
-                        </div>
-                        <span class="percentage">75%</span>
-                    </div>
-                    <div class="progress-container">
-                        <p>Adobe Photoshop</p>
-                        <div class="progress">
-                            <div class="progress-bar photoshop"></div>
-                        </div>
-                        <span class="percentage">70%</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <h3>Languages</h3>
-                <div class="skill-bar">
-                    <div class="progress-container">
-                        <p>English</p>
-                        <div class="progress">
-                            <div class="progress-bar english"></div>
-                        </div>
-                        <span class="percentage">100%</span>
-                    </div>
-                    <div class="progress-container">
-                        <p>Cantonese</p>
-                        <div class="progress">
-                            <div class="progress-bar cantonese"></div>
-                        </div>
-                        <span class="percentage">85%</span>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Karena Seto. All rights reserved.</p>
+        <div class="info-card resume-card">
+            <h3>Resume</h3>
+            <p>Download my resume!</p>
+            <a href="KarenasResume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn">
+                View Resume
+            </a>
         </div>
-    </footer>
+    </div>
+</section>
 
+<footer>
+    <p>&copy; 2026 Karena Seto</p>
+</footer>
+
+</div>
+
+<script>
+    const foodCards = Array.from(document.querySelectorAll(".food-card"));
+    const nextFood = document.getElementById("nextFood");
+    const prevFood = document.getElementById("prevFood");
+    const foodStack = document.getElementById("foodStack");
+
+    if (foodCards.length && nextFood && prevFood && foodStack) {
+        let currentFoodIndex = 0;
+        let startX = 0;
+        let endX = 0;
+
+        function renderFoodStack() {
+            foodCards.forEach((card, index) => {
+                card.classList.remove("active", "next", "back", "hidden");
+
+                const relativeIndex =
+                    (index - currentFoodIndex + foodCards.length) % foodCards.length;
+
+                if (relativeIndex === 0) {
+                    card.classList.add("active");
+                } else if (relativeIndex === 1) {
+                    card.classList.add("next");
+                } else if (relativeIndex === 2) {
+                    card.classList.add("back");
+                } else {
+                    card.classList.add("hidden");
+                }
+            });
+        }
+
+        function showNextFood() {
+            currentFoodIndex = (currentFoodIndex + 1) % foodCards.length;
+            renderFoodStack();
+        }
+
+        function showPrevFood() {
+            currentFoodIndex = (currentFoodIndex - 1 + foodCards.length) % foodCards.length;
+            renderFoodStack();
+        }
+
+        nextFood.addEventListener("click", showNextFood);
+        prevFood.addEventListener("click", showPrevFood);
+
+        foodStack.addEventListener("touchstart", (e) => {
+            startX = e.changedTouches[0].clientX;
+        });
+
+        foodStack.addEventListener("touchend", (e) => {
+            endX = e.changedTouches[0].clientX;
+            const diff = endX - startX;
+
+            if (diff < -50) {
+                showNextFood();
+            } else if (diff > 50) {
+                showPrevFood();
+            }
+        });
+
+        renderFoodStack();
+    }
+</script>
 </body>
 </html>
