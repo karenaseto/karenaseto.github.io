@@ -186,6 +186,14 @@ header nav {
     border-radius: 18px;
     margin-bottom: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+    overflow: hidden;
+}
+
+.project-screenshot {
+    display: block;
+    width: calc(100% + 60px);
+    margin: -30px -30px 20px -30px;
+    border-bottom: 1px solid #F0E5DC;
 }
 
 .project-tags {
@@ -733,6 +741,10 @@ footer {
 .project-btn:hover {
     background-color: #6F161B;
     transform: translateY(-1px);
+}
+
+.project-btn + .project-btn {
+    margin-left: 12px;
 }
 
 .coming-soon-page {
