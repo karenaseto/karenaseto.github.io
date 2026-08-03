@@ -196,6 +196,32 @@ header nav {
     border-bottom: 1px solid #F0E5DC;
 }
 
+.project-screenshots-row {
+    display: flex;
+    gap: 14px;
+    width: calc(100% + 60px);
+    margin: -30px -30px 20px -30px;
+    padding: 24px;
+    background: #F3E6DC;
+    border-bottom: 1px solid #F0E5DC;
+    overflow-x: auto;
+}
+
+.project-screenshots-row img {
+    display: block;
+    height: 300px;
+    width: auto;
+    border-radius: 14px;
+    flex-shrink: 0;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 900px) {
+    .project-screenshots-row img {
+        height: 220px;
+    }
+}
+
 .project-tags {
     display: flex;
     gap: 10px;
